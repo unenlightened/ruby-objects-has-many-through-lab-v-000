@@ -1,6 +1,6 @@
 class Doctor
   attr_accessor :name
-  
+
   def initialize(name)
     @name = name
     @appointments = []
@@ -11,8 +11,8 @@ class Doctor
     appointment.doctor = self
   end
 
-  def songs
-    @songs
+  def appointments
+    @appointments
   end
 
   def genres
