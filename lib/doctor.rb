@@ -15,7 +15,7 @@ class Doctor
     @appointments
   end
 
-  def genres
-    songs.collect {|song| song.genre}
+  def patients
+    appointments.collect {|appointment| appointment.patient}
   end
 end
