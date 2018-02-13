@@ -1,8 +1,9 @@
-class Doctor
+class appointment
 
-  def initialize(name)
-    @name = name
-    @appointments = []
+  def initialize(date, doctor)
+    @date = date
+    @doctor = doctor
+    doctor.add_appointment(self)
   end
 
 end
